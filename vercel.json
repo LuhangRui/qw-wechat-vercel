@@ -2,7 +2,10 @@
     "version": 2,
     "name": "qw-wechat-vercel",
     "builds": [
-      { "src": "package.json", "use": "@vercel/node" }
+        {
+            "src": "/api/*.js",
+            "use": "@vercel/node"
+        }
     ]
   }
   

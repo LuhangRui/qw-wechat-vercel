@@ -1,0 +1,23 @@
+{
+  "name": "vercel-serverless",
+  "version": "1.0.0",
+  "description": "spark-wechat serverless",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wehcat-bot"
+  ],
+  "author": "ergou",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "eventsource": "^2.0.2",
+    "install": "^0.13.0",
+    "node-fetch": "^3.3.2",
+    "npm": "^10.2.5",
+    "xml2js": "^0.6.2"
+  }
+}

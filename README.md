@@ -65,6 +65,10 @@ SUBSCRIBE_REPLY=欢迎关注，我已经接入了阿里千问智能AI，对我�
 ![image](https://github.com/SuxueCode/WechatBakTool/assets/30895030/d9312742-51ed-408a-a98e-f1ce776f7664)
 ![image](https://github.com/SuxueCode/WechatBakTool/assets/30895030/b52a6baa-5493-4ed9-aefd-b54bff571d14)
 
+#### 为什么有时候会忘记之前的对话
+
+答：`serverless`服务是一种无状态的服务，每次请求都是一个新的生命周期，只有在两次请求相距时间很短的情况下才有可能会复用上个生命周期，呈现出记录了上次对话的状态。因此，如果模型忘记了上次对话才是常态，记住了，才是取巧。
+
 #### 通义千问目前模型支持情况
 ##### 限时免费
 1. 通义千问72B  qwen-72b-chat

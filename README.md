@@ -3,16 +3,17 @@
 
 ### 必要条件
 
-1. 有一个域名
+ ~~1. 有一个域名~~
 
->这个条件我觉得已经相当低了，至少成本比服务器要少很多吧。`xyz、fun、asia` 结尾的域名只要6-14块一年。
+ ~~>这个条件我觉得已经相当低了，至少成本比服务器要少很多吧。`xyz、fun、asia` 结尾的域名只要6-14块一年。~~
+ 复制 vercel 平台上默认分配的域名也可以（xxx-xx-xx.vercel.app)
 
 ### 操作指南
 
 1. 注册阿里云，点击此链接[【模型服务灵积】](https://dashscope.console.aliyun.com/overview)，开通阿里模型服务灵积。
 2. 开通成功左侧菜单找到`管理中心`->`API-KEY管理`，创建apiKey,
-3. 去阿里云购买个你喜欢的域名，最便宜的那种就行。买完增加`cname`解析到`cname-china.vercel-dns.com`
-4. 注册微信公众号，个人订阅号就行。后台管理页面上找到`设置与开发`-`基本配置`-`服务器配置`，修改服务器地址url为`https://你的域名/api/spark-wechat`，`TOKEN`是自定义的，随便编一个。`EncodingAESKey`随机生成(~~反正我们不用这一项~~)，我们选明文模式就好了。先不要提交，提交会校验TOKEN，所以等下一步我们部署好了再进行操作。
+~~3. 去阿里云购买个你喜欢的域名，最便宜的那种就行。买完增加`cname`解析到`cname-china.vercel-dns.com`~~
+4. 注册微信公众号，个人订阅号就行。后台管理页面上找到`设置与开发`-`基本配置`-`服务器配置`，修改服务器地址url为`https://你的域名/api/qw-wechat`，`TOKEN`是自定义的，随便编一个。`EncodingAESKey`随机生成(~~反正我们不用这一项~~)，我们选明文模式就好了。先不要提交，提交会校验TOKEN，所以等下一步我们部署好了再进行操作。
 5. ~~fork本项目到你自己的仓库，访问[【Vercel】](https://vercel.com/)使用github账号登录就好了。然后新建项目，选择`Import Git Repository`从github仓库导入。~~（参照下方的一键部署按钮来完成） ~~在`Environment Variables`选项卡，增加环境变量~~把下面的变量一项一项的加进去：
 ```
 API_KEY=sk-xxxx
